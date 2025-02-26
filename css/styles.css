@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif; /*fonte*/
+    display: flex; /*usa o flexbox para exibir o conteudo*/
+    justify-content: center; /* centraliza na horizontal*/
+    height: 100vh; /*altura da pagina é todo conteudo dela*/
+    align-items: center; /*centraliza na vertical*/
+    background-color: rgb(46, 46, 156);
+}
+.container{
+    background-color: white;
+    padding: 20px; /*espaçamento interno*/
+    border-radius: 15px; /*bordas arredondadas*/
+    box-shadow: 6px 8px; /*sombreamento 4px (horizontal) 8px (vertical)*/
+    text-align: center; /*centraliza o texto*/
+}
+
+h2{
+    padding: 5px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px; /*espaçamento interno*/
+    border-radius: 10px; /*bordas arredondadas*/
+    cursor: pointer; /*mouse vira um ponteiro*/
+}
+
+/*criar efeito de passar o mouse no botão*/
+button:hover{
+    background-color: red;
+}
+
+.imagem{
+    border-radius: 50%;
+    width: 100px; /*largura*/
+    height: 100px; /*altura*/
+    margin-bottom: 10px; /*espaçamento externo*/
+}
