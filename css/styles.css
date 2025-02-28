@@ -9,7 +9,7 @@ body{
 .container{
     background:linear-gradient(-40deg, yellow, blue);
     padding: 20px; /*espaçamento interno*/
-    border-radius: 15px; /*bordas arredondadas*/
+    border-radius: 20px; /*bordas arredondadas*/
     box-shadow: 6px 8px; /*sombreamento 4px (horizontal) 8px (vertical)*/
     border: solid black;
     text-align: center; /*centraliza o texto*/
