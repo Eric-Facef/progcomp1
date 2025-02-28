@@ -4,10 +4,10 @@ body{
     justify-content: center; /* centraliza na horizontal*/
     height: 100vh; /*altura da pagina é todo conteudo dela*/
     align-items: center; /*centraliza na vertical*/
-    background-color: rgb(46, 46, 156);
+    background: linear-gradient(-40deg, yellow, blue)
 }
 .container{
-    background-color: yellow;
+    background:linear-gradient(-40deg, yellow, blue);
     padding: 20px; /*espaçamento interno*/
     border-radius: 15px; /*bordas arredondadas*/
     box-shadow: 6px 8px; /*sombreamento 4px (horizontal) 8px (vertical)*/
@@ -30,12 +30,12 @@ button{
 
 /*criar efeito de passar o mouse no botão*/
 button:hover{
-    background-color: red;
+    background-color: yellow
 }
 
 .imagem{
     border-radius: 50%;
-    width: 100px; /*largura*/
-    height: 100px; /*altura*/
-    margin-bottom: 10px; /*espaçamento externo*/
+    width: 200px; /*largura*/
+    height: 200px; /*altura*/
+    margin-bottom: 5px; /*espaçamento externo*/
 }
