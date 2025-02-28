@@ -7,7 +7,7 @@ body{
     background-color: rgb(46, 46, 156);
 }
 .container{
-    background-color: white;
+    background-color: yellow;
     padding: 20px; /*espaçamento interno*/
     border-radius: 15px; /*bordas arredondadas*/
     box-shadow: 6px 8px; /*sombreamento 4px (horizontal) 8px (vertical)*/
