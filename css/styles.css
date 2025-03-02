@@ -26,10 +26,13 @@ button{
     padding: 5px; /*espaçamento interno*/
     border-radius: 10px; /*bordas arredondadas*/
     cursor: pointer; /*mouse vira um ponteiro*/
+    box-shadow: 0px 0px 15px blue;
 }
 
 /*criar efeito de passar o mouse no botão*/
 button:hover{
+    color: black;
+    box-shadow: 0px 0px 15px yellow;
     background-color: yellow
 }
 
@@ -38,4 +41,5 @@ button:hover{
     width: 200px; /*largura*/
     height: 200px; /*altura*/
     margin-bottom: 5px; /*espaçamento externo*/
+    border: solid black;
 }
