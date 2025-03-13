@@ -20,7 +20,7 @@ nav {
 }
 #links-menu {
     display: flex;
-    gap: 15px; /*distancia entre os itens do menu*/
+    gap: 35px; /*distancia entre os itens do menu*/
 }
 nav a { /*configura os links do menu*/
     color: white;
@@ -29,4 +29,24 @@ nav a { /*configura os links do menu*/
     font-size: 18px;
     background: #0056b3;
     border-radius: 5px; /*cantos arredondados*/
+}
+img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px; /*espaçamento externo a direita*/
+    border-radius: 60px; 
+    box-shadow: 3px 3px;
+}
+.container {
+    width: 80%; /*largura de 80% da largura da pagina*/
+    background: orange;
+    border-radius: 10px;
+    /*espaçamento externo de 20px acima e abaixo*/
+    /*espaçamento externo auto a direita e a esquerda*/
+    margin: 20px auto;
+    padding: 20px; /*expaçamento interno*/
+    text-align: justify;
+}
+h2 {
+    text-align: center;
 }
