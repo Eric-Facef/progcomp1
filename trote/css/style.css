@@ -36,6 +36,7 @@ img {
     margin-right: 20px; /*espaçamento externo a direita*/
     border-radius: 60px; 
     box-shadow: 3px 3px;
+    border: solid black 1px;
 }
 .container {
     width: 80%; /*largura de 80% da largura da pagina*/
