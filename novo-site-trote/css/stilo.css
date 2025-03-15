@@ -6,7 +6,7 @@ body {
     text-align: center; /*texto centralizado*/
 }
 header {
-    background-color: #28a745;
+    background-color: orange;
     color: white;
     padding: 15px 0px; /*15px expaçamento interno acima e abaixo e 0px direita e esquerda*/
     font-size: 24px;
@@ -34,7 +34,9 @@ img {
     width: 120px;
     height: auto;
     margin-right: 20px; /*espaçamento externo a direita*/
-    border-radius: 20px; 
+    border-radius: 60px; 
+    box-shadow: 3px 3px;
+    border: solid black 1px;
 }
 .container {
     width: 80%; /*largura de 80% da largura da pagina*/
@@ -48,4 +50,31 @@ img {
 }
 h2 {
     text-align: center;
+}
+.cont {
+    width: 80%; /*largura de 80% da largura da pagina*/
+    background: orange;
+    border-radius: 10px;
+    /*espaçamento externo de 20px acima e abaixo*/
+    /*espaçamento externo auto a direita e a esquerda*/
+    margin: 20px auto;
+    padding: 20px; /*expaçamento interno*/
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+    width: 80%;
+    border: solid black 2px;
+}
+table, td, th {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 10px;
+    text-align: justify;
+}
+
+.tabela:hover{
+    background: white;
+    color: black;
 }
