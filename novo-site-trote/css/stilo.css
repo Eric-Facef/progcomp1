@@ -1,34 +1,48 @@
 body {
     font-family: arial, sans-serif;
-    margin: 0; /*espaçamento externo da pagina*/
-    padding: 0; /*espaçamento externo*/
+    margin: 0; 
+    padding: 0; 
     background-color: #f4f4f4;
-    text-align: center; /*texto centralizado*/
+    text-align: center; 
 }
 header {
-    background-color: orange;
+    background: linear-gradient(45deg, blue, red, orange, green, purple );
+    background-size: 140% 140%;
+    animation: color 10s ease infinite;
     color: white;
-    padding: 15px 0px; /*15px expaçamento interno acima e abaixo e 0px direita e esquerda*/
+    padding: 15px 0px; 
     font-size: 24px;
+}
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+     100% {
+        background-position: 0% 50%;
+    }
+
 }
 nav {
     background: #007bff;
-    padding: 10px; /*espaçamento interno do menu*/
-    display: flex; /*flex boxing*/
-    justify-content: space-between; /*espaço entre os elementos do menu*/
-    align-items: center; /*alinhamento na vertical*/
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 #links-menu {
     display: flex;
-    gap: 35px; /*distancia entre os itens do menu*/
+    gap: 35px; 
 }
-nav a { /*configura os links do menu*/
+nav a { 
     color: white;
-    text-decoration: none; /*não decora os itens*/
+    text-decoration: none; 
     padding: 10px 15px; 
     font-size: 18px;
     background: #0056b3;
-    border-radius: 5px; /*cantos arredondados*/
+    border-radius: 5px;
     cursor: pointer;
 }
 nav a:hover{
@@ -38,50 +52,58 @@ nav a:hover{
 img {
     width: 120px;
     height: auto;
-    margin-right: 20px; /*espaçamento externo a direita*/
+    margin-right: 20px; 
     border-radius: 60px; 
     box-shadow: 3px 3px;
     border: solid black 1px;
 }
 .container {
-    width: 80%; /*largura de 80% da largura da pagina*/
-    background: orange;
+    width: 80%; 
+    background: #eeeeee;
     border-radius: 10px;
-    /*espaçamento externo de 20px acima e abaixo*/
-    /*espaçamento externo auto a direita e a esquerda*/
     margin: 20px auto;
-    padding: 20px; /*expaçamento interno*/
+    padding: 20px; 
     text-align: justify;
 }
 h2 {
     text-align: center;
 }
 .cont {
-    width: 80%; /*largura de 80% da largura da pagina*/
-    background: orange;
+    width: 80%; 
+    background: #eeeeee;
     border-radius: 10px;
-    /*espaçamento externo de 20px acima e abaixo*/
-    /*espaçamento externo auto a direita e a esquerda*/
     margin: 20px auto;
-    padding: 20px; /*expaçamento interno*/
+    padding: 20px; 
     text-align: center;
 }
 table {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     border: solid black 2px;
 }
 table, td, th {
     border-collapse: collapse;
 }
-td, th {
+th {
+    padding: 10px;
+    text-align: center;
+}
+.td3 {
     padding: 10px;
     text-align: justify;
 }
-
 table {
 background: white;
 }
-.sublinhado{
+.sublinhado {
     text-decoration: underline;
+}
+.td1 {
+    text-align: center;
+}
+.td2{
+    text-align: center;
+}
+h3{
+    text-align: center;
 }
