@@ -6,7 +6,7 @@ body {
     text-align: center; 
 }
 header {
-    background: linear-gradient(45deg, blue, red, orange, green, purple );
+    background: linear-gradient(45deg, black, red, orange, green, purple );
     background-size: 140% 140%;
     animation: color 10s ease infinite;
     color: white;
@@ -20,7 +20,7 @@ header {
     50% {
         background-position: 100% 50%;
     }
-     100% {
+    100% {
         background-position: 0% 50%;
     }
 
@@ -106,4 +106,8 @@ background: white;
 }
 h3{
     text-align: center;
+}
+.azul1 {
+    padding: 15px;
+    background-color: #007bff;
 }
