@@ -110,22 +110,6 @@ h3{
     background-color: navy;
     color: white;
 }
-.laranja {  
-    background-color: orange;
-}
-.preta {
-    background-color: black;
-    color: white;
-} 
-.roxa {
-    background-color: purple;
-}
-.verde {
-    background-color: green;
-} 
-.vermelha {
-    background-color: red;
-}
 td {
     padding: 5px;
 }
@@ -148,7 +132,31 @@ ul li {
     padding-bottom: 10px;
 }
 .campos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.campos label {
+    width: 200px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.campos input,
+.campos select {
+    width: 150px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+.campos button {
+    width: 100px;
+    padding: 8px 8px;
+    font-size: 16px;
+    margin-right: 10px;
 }
 .button-calc {
     background-color: blue;
@@ -157,11 +165,56 @@ ul li {
     padding: 10px 20px;
     border: solid black 1px;
     cursor: pointer;
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5); /* Adicionando cor preta com transparência */
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5); 
     transition: 0.3s;
 }
 .button-calc:hover {
     background-color: red;
 }
-
+.quadrado-cor {
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.Laranja { 
+    background-color: orange;
+    border: orange;
+ }
+.Preta { 
+    background-color: black;
+    color: white;
+    border: black; 
+}
+.Roxa { 
+    background-color: purple;
+    border: purple; 
+}
+.Verde { 
+    background-color: green; 
+    border: green;
+}
+.Vermelha { 
+    background-color: red;
+    border: red; 
+}
+.laranja { 
+    background-color: orange;
+ }
+.preta { 
+    background-color: black;
+    color: white; 
+}
+.roxa { 
+    background-color: purple; 
+}
+.verde { 
+    background-color: green; 
+}
+.vermelha { 
+    background-color: red; 
+}
 

@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu site trote</title>
         <link rel="stylesheet" href="css/stilo.css">
-        <script src="js/scripts.js"></script>
     </head>
     <body>
         <header> <!--cabeçalho do corpo da pagina-->
@@ -28,15 +27,16 @@
             <h2> Calculadoras </h2>
             <form>
                 <div class="campos">
-                    <label>Selecione a cor da equipe</label>
+                    <label for="equipe">Escolher equipe:</label>
                     <select id="equipe">
-                        <option value="Laranja"> Laranja </option>
-                        <option value="Preta"> Preta </option>
-                        <option value="Roxa"> Roxa </option>
-                        <option value="Verde"> Verde</option>
-                        <option value="Vermelha"> Vermelha </option>
+                        <option value="Laranja">Laranja</option>
+                        <option value="Preta">Preta</option>
+                        <option value="Roxa">Roxa</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Vermelha">Vermelha</option>
                     </select>
-                </div>
+                <span id="quadrado-cor" class="quadrado-cor"></span>
+                </div>                
                 <div class="campos">
                     <label> Pct. Arroz 5kg </label>
                     <input type="number" id="arroz5">
@@ -67,11 +67,11 @@
                 </div>
                 <div class="campos">
                     <label> Kit alimentação </label>
-                    <input type="number" id="kitAvulso">
+                    <input type="number" id="kit">
                 </div>
                 <div class="campos">
                     <label> Suplemento </label>
-                    <input type="number" id="suplementoAvulso">
+                    <input type="number" id="suplemento">
                 </div>
                 <div class="campos">
                     <label> Mascote do time </label>
@@ -90,10 +90,15 @@
                     <input type="number" id="rAudiovisual">
                 </div>
                 <div class="campos">
+                    <label> Doação de Sangue </label>
+                    <input type="number" id="sangue">
+                </div>
+                <div class="campos">
                     <button type="button" onclick="calcular()" class="button-calc"> Calcular </button>
                     <label id="soma"></label>
                 </div>
             </form>
         </div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
