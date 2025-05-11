@@ -1,95 +1,64 @@
 body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
 
-    .container {
-      background: #fff;
-      padding: 20px 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 400px;
-      max-width: 90%;
-    }
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
 
-    h1 {
-      margin-bottom: 15px;
-      color: #333;
-    }
+input, button {
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  font-size: 1.3em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-    input, button {
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      width: 100%;
-      box-sizing: border-box;
-    }
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-    button {
-      background-color: #007BFF;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+button:hover {
+  background-color: #45a049;
+}
 
-    button:hover {
-      background-color: #0056b3;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
 
-    #resultado {
-      margin-top: 20px;
-      text-align: left;
-      padding: 0;
-      list-style: none;
-      max-height: 400px; /* Limita a altura da área de resultados */
-      overflow-y: auto;  /* Adiciona a barra de rolagem vertical */
-    }
+li {
+  padding: 12px;
+  font-size: 1.4em;
+  border-bottom: 1px solid #ddd;
+}
 
-    #resultado li {
-      background-color: #e6f0ff;
-      padding: 8px;
-      border-radius: 4px;
-      margin-bottom: 5px;
-      transition: all 0.3s ease;
-      opacity: 0;
-    }
+/* Melhorias extras para telas muito grandes */
+@media (min-width: 768px) {
+  body {
+    padding: 40px;
+  }
 
-    #resultado li.mostrar {
-      opacity: 1;
-    }
+  h1 {
+    font-size: 2.5em;
+  }
 
-    .botoes {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-    }
+  input, button {
+    font-size: 1.5em;
+  }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 15px;
-      }
-    }
-
-    /* Esconde botões e inputs na impressão */
-    @media print {
-      button, input {
-        display: none !important;
-      }
-
-      body {
-        background: white;
-      }
-
-      .container {
-        box-shadow: none;
-        width: 100%;
-        padding: 0;
-      }
-    }
+  li {
+    font-size: 1.5em;
+  }
+}
