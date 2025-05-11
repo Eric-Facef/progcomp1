@@ -11,8 +11,16 @@ h1 {
   margin-bottom: 25px;
 }
 
+/* Centralizar inputs e botões em coluna */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 input, button {
   width: 100%;
+  max-width: 400px; /* Limita o tamanho para não ficar esticado */
   padding: 15px;
   margin: 8px 0;
   font-size: 1.3em;
@@ -22,14 +30,13 @@ input, button {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: red;
   color: white;
-  border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: blue;
 }
 
 ul {
