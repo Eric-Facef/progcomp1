@@ -1,13 +1,8 @@
-let numeroSecreto = Math.floor(Math.random() * 101);
-console.log("Número secreto é:", numeroSecreto);
-let tt = 0;
-let cA = [];
-let cB = [];
-let cH = [];
-let numerosTentados = [];
-
 function aplicarFocoVisual(input) {
-    input.classList.add('foco');
+    // Verifica se a tela é maior que 600px antes de aplicar o foco
+    if (window.innerWidth > 600) {
+        input.classList.add('foco');
+    }
 }
 
 function removerFocoVisual(input) {
@@ -26,7 +21,6 @@ function fazerChute() {
     // Verifica se o valor digitado é um número válido e dentro do intervalo permitido
     if (valorDigitado === '' || isNaN(chute) || chute < 0 || chute > 100) {
         mensagem.textContent = "Por favor, digite um número válido entre 0 e 100.";
-        console.log("Valor inválido ou fora do intervalo:", valorDigitado); // Log da tentativa inválida
         input.value = '';
         input.focus();
         aplicarFocoVisual(input);
@@ -39,7 +33,6 @@ function fazerChute() {
         input.value = '';
         input.focus();
         aplicarFocoVisual(input);
-        console.log("Número repetido:", chute); // Log do número repetido
         return;
     }
 
@@ -67,6 +60,7 @@ function fazerChute() {
     input.focus();
     aplicarFocoVisual(input);
 }
+
 
 function reiniciarJogo() {
     numeroSecreto = Math.floor(Math.random() * 101);

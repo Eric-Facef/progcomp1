@@ -3,7 +3,7 @@
   --text-color: #000;
   --container-bg: #ffffff;
   --input-bg: #ffffff;
-  --button-border-color: black; /* Borda padrão dos botões */
+  --button-border-color: black;
 }
 
 body {
@@ -40,7 +40,7 @@ button {
   margin: 5px;
   padding: 10px 15px;
   border-radius: 8px;
-  border: solid var(--button-border-color) 1px; /* A borda dos botões é dinâmica */
+  border: solid var(--button-border-color) 1px;
   cursor: pointer;
   font-size: 16px;
 }
@@ -53,16 +53,22 @@ button:hover {
   margin-top: 15px;
 }
 
+/* Modo foco (funciona em qualquer tamanho de tela agora) */
+.foco {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* Dark Mode */
 .dark {
   --bg-color: #121212;
   --text-color: #f0f0f0;
   --container-bg: #1e1e1e;
-  --input-bg: #ffffff; /* Input branco no dark mode */
-  --button-border-color: white; /* Borda dos botões branca no dark mode */
+  --input-bg: #ffffff;
+  --button-border-color: white;
 }
 
-/* Responsivo extra (opcional) */
+/* Responsivo extra */
 @media (max-width: 400px) {
   input {
     width: 100%;
@@ -70,13 +76,5 @@ button:hover {
 
   button {
     width: 100%;
-  }
-}
-
-/* Modo foco (só aparece em telas maiores que 600px) */
-@media (min-width: 600px) {
-  .foco {
-    outline: 3px solid orange;
-    box-shadow: 0 0 10px orange;
   }
 }
