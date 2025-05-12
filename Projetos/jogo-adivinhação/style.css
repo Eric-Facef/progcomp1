@@ -72,3 +72,11 @@ button:hover {
     width: 100%;
   }
 }
+
+/* Modo foco (só aparece em telas maiores que 600px) */
+@media (min-width: 600px) {
+  .foco {
+    outline: 3px solid orange;
+    box-shadow: 0 0 10px orange;
+  }
+}

@@ -6,6 +6,14 @@ let cB = [];
 let cH = [];
 let numerosTentados = [];
 
+function aplicarFocoVisual(input) {
+    input.classList.add('foco');
+}
+
+function removerFocoVisual(input) {
+    input.classList.remove('foco');
+}
+
 function fazerChute() {
     const input = document.getElementById('chuteInput');
     const valorDigitado = input.value.trim();
@@ -19,6 +27,9 @@ function fazerChute() {
     if (valorDigitado === '' || isNaN(chute) || chute < 0 || chute > 100) {
         mensagem.textContent = "Por favor, digite um número válido entre 0 e 100.";
         console.log("Valor inválido ou fora do intervalo:", valorDigitado); // Log da tentativa inválida
+        input.value = '';
+        input.focus();
+        aplicarFocoVisual(input);
         return;
     }
 
@@ -26,6 +37,8 @@ function fazerChute() {
     if (numerosTentados.includes(chute)) {
         mensagem.textContent = "Você já tentou esse número! Tente outro.";
         input.value = '';
+        input.focus();
+        aplicarFocoVisual(input);
         console.log("Número repetido:", chute); // Log do número repetido
         return;
     }
@@ -45,13 +58,14 @@ function fazerChute() {
         console.log(`Acertou o número em ${tt} tentativas! Número secreto: ${numeroSecreto}`); // Log de acerto
     }
 
-    // Atualiza as listas de chutes e tentações
+    // Atualiza as listas de chutes e tentativas
     tentativasLista.innerHTML = `<strong>Números tentados:</strong> ${cA.join(', ')}`;
     divChutesBaixos.innerHTML = `<strong>Chutes baixos:</strong> <span class="chutes-baixos">${cB.join(', ') || 'Nenhum' }</span>`;
     divChutesAltos.innerHTML = `<strong>Chutes altos:</strong> <span class="chutes-altos">${cH.join(', ') || 'Nenhum' }</span>`;
 
     input.value = '';
     input.focus();
+    aplicarFocoVisual(input);
 }
 
 function reiniciarJogo() {
@@ -73,15 +87,17 @@ function reiniciarJogo() {
     input.disabled = false;
     input.value = '';
     input.focus();
+    aplicarFocoVisual(input);
 }
 
 function alternarDarkMode(){
     document.body.classList.toggle('dark');
     const currentTheme = document.body.classList.contains('dark') ? 'Dark mode' : 'Light mode';
     console.log(`O tema foi alterado para: ${currentTheme}`);
-    
+
     const input = document.getElementById('chuteInput');
     input.focus();
+    aplicarFocoVisual(input);
 }
 
 function mostrarAjuda() {
@@ -99,6 +115,7 @@ function mostrarAjuda() {
 
     const input = document.getElementById('chuteInput');
     input.focus();
+    aplicarFocoVisual(input);
 }
 
 document.addEventListener('keydown', function(event) {
