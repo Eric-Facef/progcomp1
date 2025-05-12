@@ -1,12 +1,16 @@
+let contadorTabuadas = 0
+
 function gerarTabuada(){
     const numberInput = document.getElementById("numero")
     const limiteInput = document.getElementById("limite")
     const result = document.getElementById("result")
+    const contador = document.getElementById("contador")
 
     const number = numberInput.value
     let limite = limiteInput.value
 
     result.innerHTML = ''
+    contadorTabuadas++
 
     if (number === '') {
          alert('Por favor, digite o número da tabuada!')
@@ -34,6 +38,8 @@ function gerarTabuada(){
         result.appendChild(item)
         i++
     }
+    
+    contador.textContent = `Tabuadas geradas: ${contadorTabuadas}`
 
     numberInput.value = ''
     limiteInput.value = ''
