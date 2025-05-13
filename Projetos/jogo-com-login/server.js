@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 // Rota de autenticação
 app.post('/login', (req, res) => {
   const { usuario, senha } = req.body;
-  if (usuario === 'admin' && senha === '1234') {
+  if (usuario === 'Eric' && senha === 'Meleti') {
     req.session.logado = true;
     res.redirect('/jogo');
   } else {
